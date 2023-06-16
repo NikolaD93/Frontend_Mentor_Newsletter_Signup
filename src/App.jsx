@@ -1,8 +1,10 @@
+import Newsletter from "./components/Newsletter";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl text-tomato font-bold">Hello World</h1>
-    </>
+    <div className="bg-charcoalGrey h-[100vh] flex items-center justify-center">
+      <Newsletter />
+    </div>
   );
 }
 
