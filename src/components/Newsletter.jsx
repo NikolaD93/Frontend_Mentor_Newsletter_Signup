@@ -10,8 +10,6 @@ const Newsletter = () => {
   const navigate = useNavigate();
   const validEmail = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-  console.log(errorMsg);
-
   const handleClick = () => {
     if (!email || !validEmail.test(email)) {
       setErrorMsg(true);
@@ -22,22 +20,22 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="flex bg-white rounded-[30px] p-5 h-[600px]">
-      <div className="py-14 px-8 color-charcoalGrey">
-        <h1 className="text-5xl font-[700] mb-5">Stay updated!</h1>
+    <div className="flex flex-col-reverse bg-white md:rounded-[30px] md:flex-row md:p-5 md:h-[600px]">
+      <div className="py-10 md:py-14 px-8 color-charcoalGrey">
+        <h1 className="text-4xl md:text-5xl font-[700] mb-5">Stay updated!</h1>
         <p className="max-w-[380px] mb-5">
           Join 60,000+ product managers receiving monthly updates on:
         </p>
         <ul>
-          <li className="flex mb-3">
+          <li className="flex items-start mb-3">
             <img src={list} alt="list" /> &nbsp; Product discovery and building
             what matters
           </li>
-          <li className="flex mb-3">
+          <li className="flex items-start mb-3">
             <img src={list} alt="list" /> &nbsp; Measuring to ensure updates are
             a success
           </li>
-          <li className="flex mb-10">
+          <li className="flex items-start mb-10">
             <img src={list} alt="list" /> &nbsp; And much more!
           </li>
         </ul>
@@ -72,7 +70,16 @@ const Newsletter = () => {
         </button>
       </div>
       <div>
-        <img className="h-[100%]" src={imgDesktop} alt="desktop-image" />
+        <img
+          className="h-[100%] hidden md:block"
+          src={imgDesktop}
+          alt="desktop-image"
+        />
+        <img
+          className="w-[100%] md:hidden"
+          src={imgMobile}
+          alt="mobile-image"
+        />
       </div>
     </div>
   );
