@@ -16,7 +16,7 @@ Users should be able to:
 
 ## [Live App Preview](https://frontend-mentor-newsletter-signup.vercel.app/)
 
-## [YT Video Preview](https://www.youtube.com/watch?v=K19fwBcMPsU)
+## [YT Video Preview](https://youtu.be/crqg-jA3ac0)
 
 ![desktop-design](https://github.com/NikolaD93/Frontend_Mentor_Newsletter_Signup/assets/95870159/92eb89fe-b6d5-4850-bc82-662fc5b473a9)
 
